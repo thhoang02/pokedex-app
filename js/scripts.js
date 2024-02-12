@@ -1,17 +1,17 @@
-let pokemonList[
+let pokemonList = [
     {
-        name: 'Bulbasaur';
+        name: 'Bulbasaur',
         height: 7,
-        type: ['grass', 'poison']
+        types: ['grass', 'poison']
     },
     {
         name: 'Charmander',
         height: 6,
-        type: ['fire']
+        types: ['fire']
     },
     {
         name: 'Squirtle',
         height: 5,
-        type: ['water']
+        types: ['water']
     }
 ];
