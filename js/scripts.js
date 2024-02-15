@@ -22,11 +22,13 @@ let pokemonList = [
     }
 ];
 
-// loop to write name, height, and comment on height if greater than 1.5
-for (let i = 0; i < pokemonList.length; i++) {
-    document.write(pokemonList[i].name + " (height: " + pokemonList[i].height + ")");
-    if (pokemonList[i].height > 1.5) {
+// function to write name, height, and comment on height if greater than 1.5
+function loopPokemon(pokemon) {
+    document.write(pokemon.name + " (height: " + pokemon.height + ")");
+    if (pokemon.height > 1.5) {
         document.write(" - wow, thats big!");
     };
     document.write("<br>");
 };
+
+pokemonList.forEach(loopPokemon);
