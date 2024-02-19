@@ -33,25 +33,24 @@ let pokemonRepository = (function () {
         button.classList.add('button-class');
         listPokemon.appendChild(button);
         ulPokemon.appendChild(listPokemon);
+
+        // when button is clicked on then it shows details of the pokemon
+        button.addEventListener('click', function () {
+            showDetails(pokemon.name);
+        });
+
+        // logs data of pokemon
+        function showDetails(pokemon) {
+            console.log(pokemon);
+        }
     };
-
-    // logs data of pokemon
-    function showDetails(pokemon) {
-        console.log(pokemon);
-    }
-
-    // when button is clicked on then it shows details of the pokemon
-    button.addEventListener('click', function () {
-        showDetails(pokemon.name);
-    });
 
     // adds new pokemon to array
     function add(pokemon) {
         if (typeof pokemon === 'object' &&
             'name' in pokemon &&
             'height' in pokemon &&
-            'types' in pokemon) 
-        {
+            'types' in pokemon) {
             pokemonList.push(pokemon);
         } else {
             console.log("pokemon needs to contain 'name', 'height' and 'type'");
