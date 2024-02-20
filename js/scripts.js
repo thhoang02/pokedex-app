@@ -36,14 +36,15 @@ let pokemonRepository = (function () {
 
         // when button is clicked on then it shows details of the pokemon
         button.addEventListener('click', function () {
-            showDetails(pokemon.name);
+            showDetails(pokemon);
         });
 
-        // logs data of pokemon
-        function showDetails(pokemon) {
-            console.log(pokemon);
-        }
     };
+
+    // logs data of pokemon
+    function showDetails(pokemon) {
+        console.log(pokemon.name);
+    }
 
     // adds new pokemon to array
     function add(pokemon) {
