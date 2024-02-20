@@ -1,28 +1,7 @@
 // returns add pokemon or getAll pokemon. name, height(meter), types (element)
 let pokemonRepository = (function () {
 
-    const pokemonList = [
-        {
-            name: 'Bulbasaur',
-            height: 0.7,
-            types: ['grass', 'poison']
-        },
-        {
-            name: 'Charmander',
-            height: 0.6,
-            types: ['fire']
-        },
-        {
-            name: 'Charizard',
-            height: 1.7,
-            types: ['fire', 'flying']
-        },
-        {
-            name: 'Squirtle',
-            height: 0.5,
-            types: ['water']
-        }
-    ];
+    const pokemonList = [];
 
     // list of buttons showing the names of each pokemon
     function addListItem(pokemon) {
