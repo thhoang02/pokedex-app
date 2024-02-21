@@ -84,14 +84,6 @@ let pokemonRepository = (function () {
 })();
 
 console.log(pokemonRepository.getAll());
-// new pokemon added
-pokemonRepository.add(
-    {
-        name: 'Ekans',
-        height: 2.0,
-        types: ['poison']
-    }
-);
 
 // loads list of pokemon from pokemonRepository
 pokemonRepository.loadList().then(function () {
